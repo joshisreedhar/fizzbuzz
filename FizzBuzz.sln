@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{773680A3-EAA5-4670-B3D4-7924FF6B6414}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{7DB89453-FB72-48FA-B941-832634A2013B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{773680A3-EAA5-4670-B3D4-7924FF6B6414}.Debug|x86.Build.0 = Debug|x86
 		{773680A3-EAA5-4670-B3D4-7924FF6B6414}.Release|x86.ActiveCfg = Release|x86
 		{773680A3-EAA5-4670-B3D4-7924FF6B6414}.Release|x86.Build.0 = Release|x86
+		{7DB89453-FB72-48FA-B941-832634A2013B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7DB89453-FB72-48FA-B941-832634A2013B}.Debug|x86.Build.0 = Debug|Any CPU
+		{7DB89453-FB72-48FA-B941-832634A2013B}.Release|x86.ActiveCfg = Release|Any CPU
+		{7DB89453-FB72-48FA-B941-832634A2013B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
