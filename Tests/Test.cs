@@ -30,6 +30,14 @@ namespace Fizzbuzz.Tests
 			string token = fz.GetToken ("17");
 			Assert.AreEqual ("17", token);
 		}
+
+		[Test ()]
+		public void A_Number_Is_Divisible_By_3_And_5_Should_Give_FizzBuzz()
+		{
+			FizzBuzzGenerator fz = new FizzBuzzGenerator ();
+			string token = fz.GetToken ("15");
+			Assert.AreEqual ("FizzBuzz", token);
+		}
 	}
 }
 
