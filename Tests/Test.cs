@@ -90,6 +90,15 @@ namespace Fizzbuzz.Tests
 			Assert.AreEqual ("Bizz", token);
 		}
 
+		[Test ()]
+		public void NonFizzBizzHandler_Should_Handle_FizzBizz_GenerationLogic()
+		{
+			Number number = new Number (7);
+			IFizzBizzHandler nonFizzBizzHandler = new NonFizzBizzHandler ();
+			string token = nonFizzBizzHandler.GetToken (number);
+			Assert.AreEqual ("7", token);
+		}
+
 	}
 }
 

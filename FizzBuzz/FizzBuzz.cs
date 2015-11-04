@@ -6,16 +6,12 @@ namespace FizzBuzz
 {
 	public class FizzBuzzGenerator
 	{
-		List<IFizzBizzHandler> fizzBizzHandlers = new List<IFizzBizzHandler> (){ new FizzHandler (), new BizzHandler () };
+		List<IFizzBizzHandler> fizzBizzHandlers = new List<IFizzBizzHandler> (){ new FizzHandler (), new BizzHandler (), new NonFizzBizzHandler() };
 			
 		public string GetToken(int number)
 		{
-			Number value = new Number (number);
-			if (!value.IsFizzBuzz ()) {
-				return number.ToString ();
-			}
-				
 			string output = "";
+			Number value = new Number (number);
 			foreach (IFizzBizzHandler handler in fizzBizzHandlers) {
 				output += handler.GetToken (value);
 			}
