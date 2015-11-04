@@ -65,6 +65,12 @@ namespace Fizzbuzz.Tests
 			Assert.IsFalse(new Number(8).IsFizzBuzz());
 		}
 
+		[Test ()]
+		public void Number_Should_Have_String_Representation()
+		{
+			Assert.AreEqual("3",new Number(3).ToString());
+		}
+
 
 	}
 }

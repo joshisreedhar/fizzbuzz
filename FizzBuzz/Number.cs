@@ -14,6 +14,11 @@ namespace FizzBuzz
 		{
 			return (value % 3 == 0) || (value % 5 == 0);
 		}
+
+		public override string ToString ()
+		{
+			return value.ToString();
+		}
 	}
 }
 

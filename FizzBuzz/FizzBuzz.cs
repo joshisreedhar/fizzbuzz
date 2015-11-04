@@ -6,6 +6,11 @@ namespace FizzBuzz
 	{
 		public string GetToken(int number)
 		{
+			Number value = new Number (number);
+			if (!value.IsFizzBuzz ()) {
+				return number.ToString ();
+			}
+
 			string output = "";
 			if (number % 3 == 0) {
 				output += "Fizz";
@@ -13,10 +18,6 @@ namespace FizzBuzz
 			if (number % 5 == 0) {
 				output += "Buzz";
 			}
-			if (output == "") {
-				output = number.ToString();
-			}
-
 			return output;
 		}
 	}
