@@ -56,6 +56,15 @@ namespace Fizzbuzz.Tests
 			Assert.AreEqual (0, token);
 		}
 
+		[Test ()]
+		public void Number_Should_Identify_If_Its_FizzBizz()
+		{
+			Assert.IsTrue(new Number(3).IsFizzBuzz());
+			Assert.IsTrue(new Number(5).IsFizzBuzz());
+			Assert.IsTrue(new Number(15).IsFizzBuzz());
+			Assert.IsFalse(new Number(8).IsFizzBuzz());
+		}
+
 
 	}
 }
