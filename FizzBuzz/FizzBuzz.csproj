@@ -38,6 +38,9 @@
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="InputParser.cs" />
     <Compile Include="Number.cs" />
+    <Compile Include="IFizzBizzHandler.cs" />
+    <Compile Include="FizzHandler.cs" />
+    <Compile Include="BizzHandler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

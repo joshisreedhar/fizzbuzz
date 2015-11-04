@@ -71,6 +71,24 @@ namespace Fizzbuzz.Tests
 			Assert.AreEqual("3",new Number(3).ToString());
 		}
 
+		[Test ()]
+		public void FizzHandler_Should_Handle_FizzBizz_GenerationLogic()
+		{
+			Number number = new Number (3);
+			IFizzBizzHandler fizzHandler = new FizzHandler ();
+			string token = fizzHandler.GetToken (number);
+			Assert.AreEqual ("Fizz", token);
+		}
+
+
+		[Test ()]
+		public void BizzHandler_Should_Handle_FizzBizz_GenerationLogic()
+		{
+			Number number = new Number (5);
+			IFizzBizzHandler bizzHandler = new BizzHandler ();
+			string token = bizzHandler.GetToken (number);
+			Assert.AreEqual ("Bizz", token);
+		}
 
 	}
 }

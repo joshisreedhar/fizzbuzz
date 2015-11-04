@@ -19,6 +19,17 @@ namespace FizzBuzz
 		{
 			return value.ToString();
 		}
+
+		public bool IsFizz()
+		{
+			return value % 3 == 0;
+		}
+
+		public bool IsBizz()
+		{
+			return value % 5 == 0;
+		}
+
 	}
 }
 
