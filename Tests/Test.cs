@@ -38,6 +38,14 @@ namespace Fizzbuzz.Tests
 			string token = fz.GetToken ("15");
 			Assert.AreEqual ("FizzBuzz", token);
 		}
+
+		[Test ()]
+		public void Should_Handle_Invalid_Case()
+		{
+			FizzBuzzGenerator fz = new FizzBuzzGenerator ();
+			string token = fz.GetToken ("ABC");
+			Assert.AreEqual ("", token);
+		}
 	}
 }
 
