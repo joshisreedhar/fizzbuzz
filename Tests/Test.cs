@@ -20,7 +20,7 @@ namespace Fizzbuzz.Tests
 		{
 			FizzBuzzGenerator fz = new FizzBuzzGenerator ();
 			string token = fz.GetToken (20);
-			Assert.AreEqual ("Buzz", token);
+			Assert.AreEqual ("Bizz", token);
 		}
 
 		[Test ()]
@@ -36,7 +36,7 @@ namespace Fizzbuzz.Tests
 		{
 			FizzBuzzGenerator fz = new FizzBuzzGenerator ();
 			string token = fz.GetToken (15);
-			Assert.AreEqual ("FizzBuzz", token);
+			Assert.AreEqual ("FizzBizz", token);
 		}
 
 

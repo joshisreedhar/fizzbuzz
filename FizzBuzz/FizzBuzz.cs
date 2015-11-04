@@ -1,22 +1,23 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace FizzBuzz
 {
 	public class FizzBuzzGenerator
 	{
+		List<IFizzBizzHandler> fizzBizzHandlers = new List<IFizzBizzHandler> (){ new FizzHandler (), new BizzHandler () };
+			
 		public string GetToken(int number)
 		{
 			Number value = new Number (number);
 			if (!value.IsFizzBuzz ()) {
 				return number.ToString ();
 			}
-
+				
 			string output = "";
-			if (number % 3 == 0) {
-				output += "Fizz";
-			}
-			if (number % 5 == 0) {
-				output += "Buzz";
+			foreach (IFizzBizzHandler handler in fizzBizzHandlers) {
+				output += handler.GetToken (value);
 			}
 			return output;
 		}
